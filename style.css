@@ -93,7 +93,8 @@ input#new-task {
 }
 
 /* Task list */
-li {
+.section-incomplete-tasks__item,
+.section-completed-tasks__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -102,22 +103,29 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+
+.section-incomplete-tasks__item > *,
+.section-completed-tasks__item > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.section-incomplete-tasks__item > input[type="checkbox"], 
+.section-completed-tasks__item > input[type="checkbox"] {
   margin: 0 10px;
 }
-li > label {
+
+.section-incomplete-tasks__item > label,
+.section-completed-tasks__item > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li >  input[type="text"] {
+.section-incomplete-tasks__item >  input[type="text"],
+.section-completed-tasks__item > input[type="text"] {
   width: 226px
 }
+
 button.delete img {
   height: 2em;
   transform: rotateZ(45deg);
@@ -128,8 +136,8 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
-  text-decoration: line-through
+#completed-tasks label {
+  text-decoration: line-through;
   color: #888;
 }
 
