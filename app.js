@@ -50,6 +50,7 @@ var createNewTaskElement = function (taskString) {
   listItem.appendChild(editInput);
   listItem.appendChild(editButton);
   listItem.appendChild(deleteButton);
+  listItem.classList.add("section-completed-tasks__item");
   return listItem;
 };
 
