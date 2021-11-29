@@ -36,7 +36,7 @@
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .section-add-item__inner-container {
@@ -44,7 +44,7 @@
 }
 
 ul {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
@@ -140,7 +140,7 @@ label[for= "new-task" ] {
 }
 .section-incomplete-tasks__item >  input[type="text"],
 .section-completed-tasks__item > input[type="text"] {
-  width: 226px
+  width: 226px;
 }
 
 button.delete img {
